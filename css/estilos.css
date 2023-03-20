@@ -1,7 +1,7 @@
-:root{ 
+:root{
     --blanco: #ffffff;
     --oscuro: #000000;
-    --gris: #757575; 
+    --gris: #757575;
     --primario: #c07fcb;
     --primarioOscuro: #6e4290;
     --secundario: #331334;
@@ -42,7 +42,6 @@ h2{font-size: 3.2rem;}
 h3{font-size: 2.4rem;}
 
 .contenedorGrid{
-    max-width: 128rem;
     height: 10vh;
     margin: 0 auto;
     display: grid;
@@ -82,7 +81,7 @@ ul{
     text-align: center;
     background-color: rgb(54, 29, 29);
 }
-.barraNav{
+.barraNav {
     display: flex;
     justify-content: space-around;
     padding: 0 2rem;
@@ -222,12 +221,22 @@ h2{
 .nosotros__video{
     grid-row: 1 / 2 ;
     width: 100%;
-    
+
 }
 @media (min-width:768px ) {
     .nosotros__video{
         grid-column:  2 / 3;
     }
+}
+
+.historiaImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historiaImageContainer > img {
+    width: 100%;
 }
 /*Contacto */
 .formulario{
@@ -290,4 +299,11 @@ h2{
 }
 .linksContainer > a:visited{
     color: black;
+}
+
+.mapContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
